@@ -12,7 +12,7 @@ namespace Videly.Controllers
         // GET: Movies
         public ActionResult Random()
         {
-            var movie = new Movies() { Name = "!Shark" ,Id=1 };
+            var movie = new Movies() { Name = "!Shark" ,Id=1,Dept="CSE",Designation="Developer" };
             return View(movie);
         }
     }

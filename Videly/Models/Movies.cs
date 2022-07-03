@@ -9,7 +9,9 @@ namespace Videly.Models
     {
         public string Name { get; set; }
         public int Id { get; set; }
+        
+        public string Dept { get; set; }
 
-
+        public string Designation { get; set; }
     }
 }
