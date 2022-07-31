@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Videly.Models;
 
 namespace Videly.Controllers
 {
@@ -10,7 +11,8 @@ namespace Videly.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var Movie = new Movies { Id = 1 };
+            return View(Movie);
         }
 
         public ActionResult About()
